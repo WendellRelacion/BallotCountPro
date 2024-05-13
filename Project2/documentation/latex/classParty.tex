@@ -1,0 +1,265 @@
+\hypertarget{classParty}{}\doxysection{Party Class Reference}
+\label{classParty}\index{Party@{Party}}
+
+
+This is a class that defines the functionalites for both OPLParties and CPL\+\_\+\+Party.  
+
+
+
+
+{\ttfamily \#include $<$Party.\+h$>$}
+
+
+
+Inheritance diagram for Party\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classParty__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Party\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classParty__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classParty_a6b6793f37c365d6ed601b1f431dd986f}{get\+Party\+Name}} () const
+\begin{DoxyCompactList}\small\item\em This functions returns the party\+Name string for the specific \mbox{\hyperlink{classParty}{Party}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a2cc09a662b550599b9136859702e21c0}{set\+Party\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classParty}{Party}} Name object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classParty_abf2e528a81d5b5ceeaf286abbcaa7f87}{get\+Candidates}} ()
+\begin{DoxyCompactList}\small\item\em This function returns a vector of type \mbox{\hyperlink{classCandidate}{Candidate}} which contains all the candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a29781ed41cc8696df6adda0157989cd5}{add\+Candidate}} (\mbox{\hyperlink{classCandidate}{Candidate}} candidate)
+\begin{DoxyCompactList}\small\item\em This function takes in a \mbox{\hyperlink{classCandidate}{Candidate}} object and it pushes it into the candidate\+Names vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallot}{Ballot}} \mbox{\hyperlink{classParty_a4d8a29310f3025adef5ecbcf0ee3ef3c}{get\+Ballot}} ()
+\begin{DoxyCompactList}\small\item\em This function gets the \mbox{\hyperlink{classBallot}{Ballot}} for the party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a0bcceac94076de63c3a9c5e3082cdcda}{set\+Ballot}} (\mbox{\hyperlink{classBallot}{Ballot}} ballot)
+\begin{DoxyCompactList}\small\item\em This function sets the ballot for the party by taking in a ballot object and then pushing that object into the party\+Ballots vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallot}{Ballot}} \mbox{\hyperlink{classParty_af536376825363fbbdc4116bec6933d68}{get\+Remainder}} ()
+\begin{DoxyCompactList}\small\item\em This function gets the remainder after doing the allocation and returns a ballot object which is the remainder votes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a028ddd60a69f6b768b3d9f7d3deade18}{set\+Remainder}} (\mbox{\hyperlink{classBallot}{Ballot}} ballot)
+\begin{DoxyCompactList}\small\item\em This function sets the remainder by taking in a ballot object and it updates the remainder variable to the new ballot passed in. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classParty_a1ff28abf8251380263f3fbdd20a63082}{get\+Allocated\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em This function returns a vector of the allocated seats after the seat allocation process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_ade4bd17561507d81c397c6c93b8fc42d}{set\+Allocated\+Seats}} (int idx, int seat)
+\begin{DoxyCompactList}\small\item\em This function sets the seats that were allocated by taking in the index and the amount of seats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParty_a71dd104a8367e482095bc3780161770a}\label{classParty_a71dd104a8367e482095bc3780161770a}} 
+std\+::string {\bfseries party\+Name}
+\item 
+\mbox{\Hypertarget{classParty_a425e1c7ffec39dea23d3b417ddf5683a}\label{classParty_a425e1c7ffec39dea23d3b417ddf5683a}} 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries candidate\+Names}
+\item 
+\mbox{\Hypertarget{classParty_acf9821b9a5083a006ba86ea7866c45ce}\label{classParty_acf9821b9a5083a006ba86ea7866c45ce}} 
+\mbox{\hyperlink{classBallot}{Ballot}} {\bfseries ballot}
+\item 
+\mbox{\Hypertarget{classParty_a8dcc00d396095a049406604fa57b6f7b}\label{classParty_a8dcc00d396095a049406604fa57b6f7b}} 
+\mbox{\hyperlink{classBallot}{Ballot}} {\bfseries remainder}
+\item 
+\mbox{\Hypertarget{classParty_a1aac0a5c3de9a907683383c575e3eb76}\label{classParty_a1aac0a5c3de9a907683383c575e3eb76}} 
+vector$<$ int $>$ {\bfseries allocated\+Seats} = \{0,0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a class that defines the functionalites for both OPLParties and CPL\+\_\+\+Party. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParty_a29781ed41cc8696df6adda0157989cd5}\label{classParty_a29781ed41cc8696df6adda0157989cd5}} 
+\index{Party@{Party}!addCandidate@{addCandidate}}
+\index{addCandidate@{addCandidate}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{addCandidate()}{addCandidate()}}
+{\footnotesize\ttfamily void Party\+::add\+Candidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidate}{Candidate}}}]{candidate }\end{DoxyParamCaption})}
+
+
+
+This function takes in a \mbox{\hyperlink{classCandidate}{Candidate}} object and it pushes it into the candidate\+Names vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate} & This function takes in candidate object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function does not return any values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a1ff28abf8251380263f3fbdd20a63082}\label{classParty_a1ff28abf8251380263f3fbdd20a63082}} 
+\index{Party@{Party}!getAllocatedSeats@{getAllocatedSeats}}
+\index{getAllocatedSeats@{getAllocatedSeats}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getAllocatedSeats()}{getAllocatedSeats()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Party\+::get\+Allocated\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function returns a vector of the allocated seats after the seat allocation process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & This function does not take in any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a int vector called allocated\+Seats 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a4d8a29310f3025adef5ecbcf0ee3ef3c}\label{classParty_a4d8a29310f3025adef5ecbcf0ee3ef3c}} 
+\index{Party@{Party}!getBallot@{getBallot}}
+\index{getBallot@{getBallot}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getBallot()}{getBallot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBallot}{Ballot}} Party\+::get\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets the \mbox{\hyperlink{classBallot}{Ballot}} for the party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & This function does not take any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a ballot object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_abf2e528a81d5b5ceeaf286abbcaa7f87}\label{classParty_abf2e528a81d5b5ceeaf286abbcaa7f87}} 
+\index{Party@{Party}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ Party\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function returns a vector of type \mbox{\hyperlink{classCandidate}{Candidate}} which contains all the candidates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & This function does not have any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a vector of type \mbox{\hyperlink{classCandidate}{Candidate}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a6b6793f37c365d6ed601b1f431dd986f}\label{classParty_a6b6793f37c365d6ed601b1f431dd986f}} 
+\index{Party@{Party}!getPartyName@{getPartyName}}
+\index{getPartyName@{getPartyName}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getPartyName()}{getPartyName()}}
+{\footnotesize\ttfamily std\+::string Party\+::get\+Party\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This functions returns the party\+Name string for the specific \mbox{\hyperlink{classParty}{Party}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & This function does not take in any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns string party\+Name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_af536376825363fbbdc4116bec6933d68}\label{classParty_af536376825363fbbdc4116bec6933d68}} 
+\index{Party@{Party}!getRemainder@{getRemainder}}
+\index{getRemainder@{getRemainder}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getRemainder()}{getRemainder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBallot}{Ballot}} Party\+::get\+Remainder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets the remainder after doing the allocation and returns a ballot object which is the remainder votes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & This function does not take any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a ballot object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_ade4bd17561507d81c397c6c93b8fc42d}\label{classParty_ade4bd17561507d81c397c6c93b8fc42d}} 
+\index{Party@{Party}!setAllocatedSeats@{setAllocatedSeats}}
+\index{setAllocatedSeats@{setAllocatedSeats}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{setAllocatedSeats()}{setAllocatedSeats()}}
+{\footnotesize\ttfamily void Party\+::set\+Allocated\+Seats (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{int}]{seat }\end{DoxyParamCaption})}
+
+
+
+This function sets the seats that were allocated by taking in the index and the amount of seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & This is an int that is an index for where the seat will be set in the allocated\+Seats vector \\
+\hline
+{\em seat} & This is an int that represents the amount of seats that are allocated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a0bcceac94076de63c3a9c5e3082cdcda}\label{classParty_a0bcceac94076de63c3a9c5e3082cdcda}} 
+\index{Party@{Party}!setBallot@{setBallot}}
+\index{setBallot@{setBallot}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{setBallot()}{setBallot()}}
+{\footnotesize\ttfamily void Party\+::set\+Ballot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallot}{Ballot}}}]{ballot }\end{DoxyParamCaption})}
+
+
+
+This function sets the ballot for the party by taking in a ballot object and then pushing that object into the party\+Ballots vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot} & This function takes in a ballot object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function does not return any values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a2cc09a662b550599b9136859702e21c0}\label{classParty_a2cc09a662b550599b9136859702e21c0}} 
+\index{Party@{Party}!setPartyName@{setPartyName}}
+\index{setPartyName@{setPartyName}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{setPartyName()}{setPartyName()}}
+{\footnotesize\ttfamily void Party\+::set\+Party\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classParty}{Party}} Name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & This function takes in a string name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function does not return any values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a028ddd60a69f6b768b3d9f7d3deade18}\label{classParty_a028ddd60a69f6b768b3d9f7d3deade18}} 
+\index{Party@{Party}!setRemainder@{setRemainder}}
+\index{setRemainder@{setRemainder}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{setRemainder()}{setRemainder()}}
+{\footnotesize\ttfamily void Party\+::set\+Remainder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallot}{Ballot}}}]{ballot }\end{DoxyParamCaption})}
+
+
+
+This function sets the remainder by taking in a ballot object and it updates the remainder variable to the new ballot passed in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot} & This function takes in a ballot object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function does not return any variables 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/\mbox{\hyperlink{Party_8h}{Party.\+h}}\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/Party.\+cpp\end{DoxyCompactItemize}

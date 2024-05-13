@@ -1,0 +1,20 @@
+Type of Election: 
+Number of Parties: 6
+Number of Ballots: 200
+Number of Seats: 13
+Party A: Joe
+Party B: Joe, Sally
+Party C: Joe, Sally, Ahmed
+Party D: Allen, Nikki, Taihui
+Party E: Sarah
+Party F: Xinyue, Nikita
+Parties        Votes             First         Remaining         Second    Final   % of Vote  % of Seats
+------------------------------------------------------------------------------------------
+Party A------------1-----------------0-----------------1--------------0--------0---------0.5% of Vote-----------0%% of Seats
+Party B------------4-----------------1-----------------0--------------0--------1-----------2% of Vote-----7.69231%% of Seats
+Party C------------0-----------------0-----------------0--------------0--------0-----------0% of Vote-----------0%% of Seats
+Party D------------2-----------------0-----------------2--------------1--------1-----------1% of Vote-----7.69231%% of Seats
+Party E------------1-----------------0-----------------1--------------0--------0---------0.5% of Vote-----------0%% of Seats
+Party F------------1-----------------0-----------------1--------------0--------0---------0.5% of Vote-----------0%% of Seats
+Party B: Joe, Sally
+Party D: Allen, Nikki, Taihui

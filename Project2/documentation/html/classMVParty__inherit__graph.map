@@ -1,0 +1,4 @@
+<map id="MVParty" name="MVParty">
+<area shape="rect" id="node1" title="This is a class that defines the functionalities for the MVParty object." alt="" coords="5,80,83,107"/>
+<area shape="rect" id="node2" href="$classParty.html" title="This is a class that defines the functionalites for both OPLParties and CPL_Party." alt="" coords="16,5,72,32"/>
+</map>

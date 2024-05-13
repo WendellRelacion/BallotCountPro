@@ -1,0 +1,139 @@
+\hypertarget{classOPLParty}{}\doxysection{OPLParty Class Reference}
+\label{classOPLParty}\index{OPLParty@{OPLParty}}
+
+
+This is a class that defines the functionalities for the \mbox{\hyperlink{classOPLParty}{OPLParty}} object.  
+
+
+
+
+{\ttfamily \#include $<$OPLParty.\+h$>$}
+
+
+
+Inheritance diagram for OPLParty\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{classOPLParty__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for OPLParty\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classOPLParty__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classOPLParty_acfd59b13c8063154fad2e704534f1dae}{get\+Candidate\+Vote}} (std\+::string candidate\+Name)
+\begin{DoxyCompactList}\small\item\em Get the number of votes for a candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOPLParty_a051aa27402fb582f593138167440d506}{set\+Candidate\+Vote}} (std\+::string candidate\+Name, int votes)
+\begin{DoxyCompactList}\small\item\em Sets the number of votes for a candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOPLParty_a14d0c575b306a5dcb563c793b3e014c0}{set\+Candidate\+Rankings}} (\mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} new\+Candidate)
+\begin{DoxyCompactList}\small\item\em Sets the rankings for the candidate. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} $>$ \mbox{\hyperlink{classOPLParty_a40f360f1583622f0da84af89255fbc61}{get\+Rankings}} ()
+\begin{DoxyCompactList}\small\item\em Get the rankings for the candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOPLParty_ab0c5a0a6f086f00a727b173be52cb4d5}{add\+OPLCandidate}} (\mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} candidate)
+\begin{DoxyCompactList}\small\item\em Adds a new OPL candiate object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is a class that defines the functionalities for the \mbox{\hyperlink{classOPLParty}{OPLParty}} object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOPLParty_ab0c5a0a6f086f00a727b173be52cb4d5}\label{classOPLParty_ab0c5a0a6f086f00a727b173be52cb4d5}} 
+\index{OPLParty@{OPLParty}!addOPLCandidate@{addOPLCandidate}}
+\index{addOPLCandidate@{addOPLCandidate}!OPLParty@{OPLParty}}
+\doxysubsubsection{\texorpdfstring{addOPLCandidate()}{addOPLCandidate()}}
+{\footnotesize\ttfamily void OPLParty\+::add\+OPLCandidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}}}]{candidate }\end{DoxyParamCaption})}
+
+
+
+Adds a new OPL candiate object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate} & \mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} object to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOPLParty_acfd59b13c8063154fad2e704534f1dae}\label{classOPLParty_acfd59b13c8063154fad2e704534f1dae}} 
+\index{OPLParty@{OPLParty}!getCandidateVote@{getCandidateVote}}
+\index{getCandidateVote@{getCandidateVote}!OPLParty@{OPLParty}}
+\doxysubsubsection{\texorpdfstring{getCandidateVote()}{getCandidateVote()}}
+{\footnotesize\ttfamily int OPLParty\+::get\+Candidate\+Vote (\begin{DoxyParamCaption}\item[{std\+::string}]{candidate\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the number of votes for a candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate\+Name} & String representing the name of the candidate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an integer representing the number of votes a candidate has 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOPLParty_a40f360f1583622f0da84af89255fbc61}\label{classOPLParty_a40f360f1583622f0da84af89255fbc61}} 
+\index{OPLParty@{OPLParty}!getRankings@{getRankings}}
+\index{getRankings@{getRankings}!OPLParty@{OPLParty}}
+\doxysubsubsection{\texorpdfstring{getRankings()}{getRankings()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} $>$ OPLParty\+::get\+Rankings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the rankings for the candidates. 
+
+\begin{DoxyReturn}{Returns}
+A vector of type \mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOPLParty_a14d0c575b306a5dcb563c793b3e014c0}\label{classOPLParty_a14d0c575b306a5dcb563c793b3e014c0}} 
+\index{OPLParty@{OPLParty}!setCandidateRankings@{setCandidateRankings}}
+\index{setCandidateRankings@{setCandidateRankings}!OPLParty@{OPLParty}}
+\doxysubsubsection{\texorpdfstring{setCandidateRankings()}{setCandidateRankings()}}
+{\footnotesize\ttfamily void OPLParty\+::set\+Candidate\+Rankings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}}}]{new\+Candidate }\end{DoxyParamCaption})}
+
+
+
+Sets the rankings for the candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Candidate} & \mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOPLParty_a051aa27402fb582f593138167440d506}\label{classOPLParty_a051aa27402fb582f593138167440d506}} 
+\index{OPLParty@{OPLParty}!setCandidateVote@{setCandidateVote}}
+\index{setCandidateVote@{setCandidateVote}!OPLParty@{OPLParty}}
+\doxysubsubsection{\texorpdfstring{setCandidateVote()}{setCandidateVote()}}
+{\footnotesize\ttfamily void OPLParty\+::set\+Candidate\+Vote (\begin{DoxyParamCaption}\item[{std\+::string}]{candidate\+Name,  }\item[{int}]{votes }\end{DoxyParamCaption})}
+
+
+
+Sets the number of votes for a candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate\+Name} & String representing the name of a candidate \\
+\hline
+{\em votes} & An integer representing the number of votes a candidate has \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/\mbox{\hyperlink{OPLParty_8h}{OPLParty.\+h}}\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/OPLParty.\+cpp\end{DoxyCompactItemize}

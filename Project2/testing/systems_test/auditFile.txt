@@ -1,0 +1,14 @@
+Type of Election: CPL
+Number of Parties: 3
+Number of Ballots: 18
+Number of Seats: 2
+Democrat: Pike, Lucy, Beiye
+Republican: Etta, Alawa
+Independent1: Sasha
+Parties        Votes             First         Remaining         Second    Final   % of Vote  % of Seats
+------------------------------------------------------------------------------------------
+Democrat----------11-----------------2-----------------3--------------0--------2-----122.222% of Vote---------100%% of Seats
+Republican---------5-----------------1-----------------1--------------0--------1-----55.5556% of Vote----------50%% of Seats
+Independent1-------2-----------------0-----------------2--------------0--------0-----22.2222% of Vote-----------0%% of Seats
+Democrat: Pike-3, Lucy-6, Beiye-2
+Republican: Etta-3, Alawa-2

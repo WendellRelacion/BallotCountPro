@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classParty.html" title="This is a class that defines the functionalites for both OPLParties and CPL_Party." alt="" coords="5,81,61,108"/>
+<area shape="rect" id="node2" href="$classMPOParty.html" title="This is a class that defines the functionalities for the MPOParty object." alt="" coords="110,5,197,32"/>
+<area shape="rect" id="node3" href="$classMVParty.html" title="This is a class that defines the functionalities for the MVParty object." alt="" coords="115,56,192,83"/>
+<area shape="rect" id="node4" href="$classOPLParty.html" title="This is a class that defines the functionalities for the OPLParty object." alt="" coords="113,107,194,133"/>
+<area shape="rect" id="node5" href="$classOPL__Party.html" title=" " alt="" coords="109,157,197,184"/>
+</map>

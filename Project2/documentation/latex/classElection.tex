@@ -1,0 +1,189 @@
+\hypertarget{classElection}{}\doxysection{Election Class Reference}
+\label{classElection}\index{Election@{Election}}
+
+
+\mbox{\hyperlink{classElection}{Election}} class which contains the data parsing methods, seat allocation methods, producing audit file and also outputting the results.  
+
+
+
+
+{\ttfamily \#include $<$Election.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classElection_a9ab83163978635fd4d090a22c92d1844}{run}} (const std\+::vector$<$ std\+::string $>$ \&file\+Name\+Vector)
+\begin{DoxyCompactList}\small\item\em This function handles parsing through the different CSV files and storing the data from the CSV file in their respective objects. It also calls helper functions for proper seat allocation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElection_a29f83051f92bb23ad638cf217faf7bf8}{largest\+\_\+remainder\+\_\+seat\+\_\+allocation}} (std\+::vector$<$ \mbox{\hyperlink{classOPLParty}{OPLParty}} $>$ \&parties, std\+::vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $>$ \&party\+Ballots, int total\+\_\+seats, int total\+Ballots, std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$ \&seats)
+\begin{DoxyCompactList}\small\item\em This function handles the seat allocation for the respective candidates/parties involved. It uses the largest remainder algorithm to allocate the seats and also handles the tiebreakers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElection_a44989d165c591fafa23cfc79ace7f86a}{largest\+\_\+remainder\+\_\+seat\+\_\+allocation}} (std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$ \&parties, std\+::vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $>$ \&party\+Ballots, int total\+\_\+seats, int total\+Ballots, std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$ \&seats)
+\begin{DoxyCompactList}\small\item\em This function handles the seat allocation if the \mbox{\hyperlink{classElection}{Election}} type is CPL. It uses the largest remainder algorithm to allocate the seats and also handles the tiebreakers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElection_a9d75140a4e8f53f8548d933ef789db3f}{sort\+Candidate\+Votes}} (std\+::vector$<$ \mbox{\hyperlink{classOPLParty}{OPLParty}} $>$ \&OPLParties, std\+::vector$<$ \mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} $>$ \&OPLCandidates, std\+::vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $>$ \&candidate\+Ballots)
+\begin{DoxyCompactList}\small\item\em This function sorts the candidate votes so that the candidates with the highest votes are ranked from top to bottom. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElection_a0ada193bc0612b14c4b5e600f9e414e5}{output}} (std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$ parties, std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$ seats)
+\begin{DoxyCompactList}\small\item\em This function creates a new file called \textquotesingle{}audit\+File.\+txt\textquotesingle{}, and writes into it all relevent information from the electin, such as seat allocations. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElection_ae128abd9ce8c98c9d77e75a018bc7cfc}{output}} (std\+::vector$<$ \mbox{\hyperlink{classOPLParty}{OPLParty}} $>$ parties, std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$ seats)
+\begin{DoxyCompactList}\small\item\em This function creates a new file called \textquotesingle{}audit\+File.\+txt\textquotesingle{}, and writes into it all relevent information from the electin, such as seat allocations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classElection_a9d6115c7fc5d8704033d4a77ab636c21}\label{classElection_a9d6115c7fc5d8704033d4a77ab636c21}} 
+int {\bfseries run\+OPL} (std\+::ifstream \&file)
+\item 
+\mbox{\Hypertarget{classElection_a9469aac15ae433dc0ca1f0e45ae5bea8}\label{classElection_a9469aac15ae433dc0ca1f0e45ae5bea8}} 
+int {\bfseries run\+CPL} (std\+::ifstream \&file)
+\item 
+\mbox{\Hypertarget{classElection_a3bfb03569af27488543046109ee9eeb7}\label{classElection_a3bfb03569af27488543046109ee9eeb7}} 
+int {\bfseries run\+MPO} (std\+::ifstream \&file)
+\item 
+\mbox{\Hypertarget{classElection_a53b7558ca1e1401410cfe7c4b889df09}\label{classElection_a53b7558ca1e1401410cfe7c4b889df09}} 
+int {\bfseries run\+MV} (std\+::ifstream \&file)
+\item 
+\mbox{\Hypertarget{classElection_a2e4e2a8aab96b4b2e37381b43d533fc1}\label{classElection_a2e4e2a8aab96b4b2e37381b43d533fc1}} 
+void {\bfseries largest\+\_\+remainder\+\_\+seat\+\_\+allocation} (std\+::vector$<$ \mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}} $>$ \&MPOCandidates, std\+::vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $>$ \&candidate\+Ballots, int total\+\_\+seats, int total\+Ballots, std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$ \&seats)
+\item 
+\mbox{\Hypertarget{classElection_a1a52f058c63783700c111c49dc73b3e2}\label{classElection_a1a52f058c63783700c111c49dc73b3e2}} 
+void {\bfseries largest\+\_\+remainder\+\_\+seat\+\_\+allocation} (std\+::vector$<$ \mbox{\hyperlink{classCandidateMV}{Candidate\+MV}} $>$ \&MVCandidates, std\+::vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $>$ \&candidate\+Ballots, int total\+\_\+seats, int total\+Ballots, std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$ \&seats)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classElection}{Election}} class which contains the data parsing methods, seat allocation methods, producing audit file and also outputting the results. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classElection_a29f83051f92bb23ad638cf217faf7bf8}\label{classElection_a29f83051f92bb23ad638cf217faf7bf8}} 
+\index{Election@{Election}!largest\_remainder\_seat\_allocation@{largest\_remainder\_seat\_allocation}}
+\index{largest\_remainder\_seat\_allocation@{largest\_remainder\_seat\_allocation}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{largest\_remainder\_seat\_allocation()}{largest\_remainder\_seat\_allocation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Election\+::largest\+\_\+remainder\+\_\+seat\+\_\+allocation (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classOPLParty}{OPLParty}} $>$ \&}]{parties,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $>$ \&}]{party\+Ballots,  }\item[{int}]{total\+\_\+seats,  }\item[{int}]{total\+Ballots,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$ \&}]{seats }\end{DoxyParamCaption})}
+
+
+
+This function handles the seat allocation for the respective candidates/parties involved. It uses the largest remainder algorithm to allocate the seats and also handles the tiebreakers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parties} & This is a vector of \mbox{\hyperlink{classOPLParty}{OPLParty}} objects which stores the different parties \\
+\hline
+{\em party\+Ballots} & This is a vector of \mbox{\hyperlink{classBallot}{Ballot}} objects which stores the different ballots(votes) for each party \\
+\hline
+{\em total\+\_\+seats} & This is an int that stores the total amount of seats that can be allocated to each party \\
+\hline
+{\em total\+Ballots} & This is an int that stores the total votes from every ballot \\
+\hline
+{\em seats} & This is a vector of seat objects that stores the seats given to a specific party \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function does not have a return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElection_a44989d165c591fafa23cfc79ace7f86a}\label{classElection_a44989d165c591fafa23cfc79ace7f86a}} 
+\index{Election@{Election}!largest\_remainder\_seat\_allocation@{largest\_remainder\_seat\_allocation}}
+\index{largest\_remainder\_seat\_allocation@{largest\_remainder\_seat\_allocation}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{largest\_remainder\_seat\_allocation()}{largest\_remainder\_seat\_allocation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Election\+::largest\+\_\+remainder\+\_\+seat\+\_\+allocation (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$ \&}]{parties,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $>$ \&}]{party\+Ballots,  }\item[{int}]{total\+\_\+seats,  }\item[{int}]{total\+Ballots,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$ \&}]{seats }\end{DoxyParamCaption})}
+
+
+
+This function handles the seat allocation if the \mbox{\hyperlink{classElection}{Election}} type is CPL. It uses the largest remainder algorithm to allocate the seats and also handles the tiebreakers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parties} & This is a vector of \mbox{\hyperlink{classParty}{Party}} objects which stores the different parties \\
+\hline
+{\em party\+Ballots} & This is a vector of \mbox{\hyperlink{classBallot}{Ballot}} objects which stores the different ballots(votes) for each party \\
+\hline
+{\em total\+\_\+seats} & This is an int that stores the total amount of seats that can be allocated to each party \\
+\hline
+{\em total\+Ballots} & This is an int that stores the total votes from every ballot \\
+\hline
+{\em seats} & This is a vector of seat objects that stores the seats given to a specific party \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function does not have a return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElection_ae128abd9ce8c98c9d77e75a018bc7cfc}\label{classElection_ae128abd9ce8c98c9d77e75a018bc7cfc}} 
+\index{Election@{Election}!output@{output}}
+\index{output@{output}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Election\+::output (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classOPLParty}{OPLParty}} $>$}]{parties,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$}]{seats }\end{DoxyParamCaption})}
+
+
+
+This function creates a new file called \textquotesingle{}audit\+File.\+txt\textquotesingle{}, and writes into it all relevent information from the electin, such as seat allocations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parties} & This is a vector of \mbox{\hyperlink{classOPLParty}{OPLParty}} objects which stores the the different parties \\
+\hline
+{\em seats} & This is a vector of seats which stores the different seats that are allocated to each respective party \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns an int for error checking 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElection_a0ada193bc0612b14c4b5e600f9e414e5}\label{classElection_a0ada193bc0612b14c4b5e600f9e414e5}} 
+\index{Election@{Election}!output@{output}}
+\index{output@{output}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Election\+::output (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$}]{parties,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSeat}{Seat}} $>$}]{seats }\end{DoxyParamCaption})}
+
+
+
+This function creates a new file called \textquotesingle{}audit\+File.\+txt\textquotesingle{}, and writes into it all relevent information from the electin, such as seat allocations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parties} & This is a vector of \mbox{\hyperlink{classParty}{Party}} objects which stores the the different parties \\
+\hline
+{\em seats} & This is a vector of seats which stores the different seats that are allocated to each respective party \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns an int for error checking 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElection_a9ab83163978635fd4d090a22c92d1844}\label{classElection_a9ab83163978635fd4d090a22c92d1844}} 
+\index{Election@{Election}!run@{run}}
+\index{run@{run}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int Election\+::run (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{file\+Name\+Vector }\end{DoxyParamCaption})}
+
+
+
+This function handles parsing through the different CSV files and storing the data from the CSV file in their respective objects. It also calls helper functions for proper seat allocation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & This function takes in a vector string of file\+Names which are the filenames the user will be prompted to type in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns an int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElection_a9d75140a4e8f53f8548d933ef789db3f}\label{classElection_a9d75140a4e8f53f8548d933ef789db3f}} 
+\index{Election@{Election}!sortCandidateVotes@{sortCandidateVotes}}
+\index{sortCandidateVotes@{sortCandidateVotes}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{sortCandidateVotes()}{sortCandidateVotes()}}
+{\footnotesize\ttfamily void Election\+::sort\+Candidate\+Votes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classOPLParty}{OPLParty}} $>$ \&}]{OPLParties,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} $>$ \&}]{OPLCandidates,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classBallot}{Ballot}} $>$ \&}]{candidate\+Ballots }\end{DoxyParamCaption})}
+
+
+
+This function sorts the candidate votes so that the candidates with the highest votes are ranked from top to bottom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em OPLParties} & This is a vector of \mbox{\hyperlink{classOPLParty}{OPLParty}} objects which stores the different parties \\
+\hline
+{\em OPLCandidates} & This is a vector of \mbox{\hyperlink{classCandidateOPL}{Candidate\+OPL}} objects which stores the candidates from the OPL election \\
+\hline
+{\em candidate\+Ballots} & This is a vector of \mbox{\hyperlink{classBallot}{Ballot}} objects which stores the votes for each candidate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function does not have a return value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/Election.\+h\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/Election copy.\+cpp\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/Election.\+cpp\end{DoxyCompactItemize}

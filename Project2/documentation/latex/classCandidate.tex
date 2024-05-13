@@ -1,0 +1,179 @@
+\hypertarget{classCandidate}{}\doxysection{Candidate Class Reference}
+\label{classCandidate}\index{Candidate@{Candidate}}
+
+
+This is a class that defines the functionalities for the candidate object.  
+
+
+
+
+{\ttfamily \#include $<$Candidate.\+h$>$}
+
+
+
+Inheritance diagram for Candidate\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCandidate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Candidate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classCandidate__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCandidate_afd22fe85fe1b8521748ff1fd01afe4cd}{get\+Candidate\+Name}} () const
+\begin{DoxyCompactList}\small\item\em This function gets the \mbox{\hyperlink{classCandidate}{Candidate}} name by returning name of the type string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_a8805800149b8139509e3bcf0391cbebe}{set\+Candidate\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em This function sets the \mbox{\hyperlink{classCandidate}{Candidate}} name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classParty}{Party}} $\ast$ \mbox{\hyperlink{classCandidate_a8d9f01813ba20d8d3390356a1c28c84e}{get\+Party}} ()
+\begin{DoxyCompactList}\small\item\em This function gets a \mbox{\hyperlink{classParty}{Party}} object for the specific \mbox{\hyperlink{classCandidate}{Candidate}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_a72e30edaf74f3bc1ad04f11543a3cfd2}{set\+Party}} (\mbox{\hyperlink{classParty}{Party}} $\ast$party)
+\begin{DoxyCompactList}\small\item\em This function passes in a party object and sets it for said candidate. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCandidate_a9079f518ea40269890c69f50c6af179f}{get\+Party\+Name}} ()
+\begin{DoxyCompactList}\small\item\em This function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_a525eeb4a8b7a71b9712fed02c826705f}{set\+Party\+Name}} (std\+::string Party\+Name)
+\begin{DoxyCompactList}\small\item\em This function gets the \mbox{\hyperlink{classCandidate}{Candidate}} name by returning name of the type string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCandidate_a53ccc2dc6842d6293c58c3460ea38087}\label{classCandidate_a53ccc2dc6842d6293c58c3460ea38087}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classCandidate_a4d3b13dccb61a37eb7ade3d1a2bbc527}\label{classCandidate_a4d3b13dccb61a37eb7ade3d1a2bbc527}} 
+\mbox{\hyperlink{classParty}{Party}} $\ast$ {\bfseries party}
+\item 
+\mbox{\Hypertarget{classCandidate_a4008c6a412ea6d6afb2519d56868dcdf}\label{classCandidate_a4008c6a412ea6d6afb2519d56868dcdf}} 
+std\+::string {\bfseries Party\+Name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a class that defines the functionalities for the candidate object. 
+
+This is a forward declaration for the class \mbox{\hyperlink{classCandidate}{Candidate}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCandidate_afd22fe85fe1b8521748ff1fd01afe4cd}\label{classCandidate_afd22fe85fe1b8521748ff1fd01afe4cd}} 
+\index{Candidate@{Candidate}!getCandidateName@{getCandidateName}}
+\index{getCandidateName@{getCandidateName}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getCandidateName()}{getCandidateName()}}
+{\footnotesize\ttfamily string Candidate\+::get\+Candidate\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This function gets the \mbox{\hyperlink{classCandidate}{Candidate}} name by returning name of the type string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & This function does not take in any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a8d9f01813ba20d8d3390356a1c28c84e}\label{classCandidate_a8d9f01813ba20d8d3390356a1c28c84e}} 
+\index{Candidate@{Candidate}!getParty@{getParty}}
+\index{getParty@{getParty}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getParty()}{getParty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classParty}{Party}} $\ast$ Candidate\+::get\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets a \mbox{\hyperlink{classParty}{Party}} object for the specific \mbox{\hyperlink{classCandidate}{Candidate}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & This function does not take in any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a party object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a9079f518ea40269890c69f50c6af179f}\label{classCandidate_a9079f518ea40269890c69f50c6af179f}} 
+\index{Candidate@{Candidate}!getPartyName@{getPartyName}}
+\index{getPartyName@{getPartyName}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getPartyName()}{getPartyName()}}
+{\footnotesize\ttfamily std\+::string Candidate\+::get\+Party\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & This function does not take in any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a8805800149b8139509e3bcf0391cbebe}\label{classCandidate_a8805800149b8139509e3bcf0391cbebe}} 
+\index{Candidate@{Candidate}!setCandidateName@{setCandidateName}}
+\index{setCandidateName@{setCandidateName}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{setCandidateName()}{setCandidateName()}}
+{\footnotesize\ttfamily void Candidate\+::set\+Candidate\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+This function sets the \mbox{\hyperlink{classCandidate}{Candidate}} name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & This function passes in a string name for it to be set for a specific \mbox{\hyperlink{classCandidate}{Candidate}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function does not return anything 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a72e30edaf74f3bc1ad04f11543a3cfd2}\label{classCandidate_a72e30edaf74f3bc1ad04f11543a3cfd2}} 
+\index{Candidate@{Candidate}!setParty@{setParty}}
+\index{setParty@{setParty}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{setParty()}{setParty()}}
+{\footnotesize\ttfamily void Candidate\+::set\+Party (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParty}{Party}} $\ast$}]{party }\end{DoxyParamCaption})}
+
+
+
+This function passes in a party object and sets it for said candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party} & This function takes in a party object pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a525eeb4a8b7a71b9712fed02c826705f}\label{classCandidate_a525eeb4a8b7a71b9712fed02c826705f}} 
+\index{Candidate@{Candidate}!setPartyName@{setPartyName}}
+\index{setPartyName@{setPartyName}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{setPartyName()}{setPartyName()}}
+{\footnotesize\ttfamily void Candidate\+::set\+Party\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{Party\+Name }\end{DoxyParamCaption})}
+
+
+
+This function gets the \mbox{\hyperlink{classCandidate}{Candidate}} name by returning name of the type string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Party\+Name} & This function does not take in any parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns a string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/\mbox{\hyperlink{Candidate_8h}{Candidate.\+h}}\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/Candidate.\+cpp\end{DoxyCompactItemize}

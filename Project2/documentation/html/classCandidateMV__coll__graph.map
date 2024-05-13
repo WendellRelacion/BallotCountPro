@@ -1,0 +1,6 @@
+<map id="CandidateMV" name="CandidateMV">
+<area shape="rect" id="node1" title="CandidateMV." alt="" coords="5,275,115,301"/>
+<area shape="rect" id="node2" href="$classCandidate.html" title="This is a class that defines the functionalities for the candidate object." alt="" coords="16,199,104,225"/>
+<area shape="rect" id="node3" href="$classParty.html" title="This is a class that defines the functionalites for both OPLParties and CPL_Party." alt="" coords="32,109,88,136"/>
+<area shape="rect" id="node4" href="$classBallot.html" title="This is a class that defines the functionalities for the Ballot class." alt="" coords="30,5,90,32"/>
+</map>

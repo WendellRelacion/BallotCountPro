@@ -1,0 +1,141 @@
+\hypertarget{classMPOParty}{}\doxysection{MPOParty Class Reference}
+\label{classMPOParty}\index{MPOParty@{MPOParty}}
+
+
+This is a class that defines the functionalities for the \mbox{\hyperlink{classMPOParty}{MPOParty}} object.  
+
+
+
+
+{\ttfamily \#include $<$Party\+MPO.\+h$>$}
+
+
+
+Inheritance diagram for MPOParty\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classMPOParty__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for MPOParty\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classMPOParty__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMPOParty_aea9bc88dcb5b530aa5336d75ae660de5}{get\+Candidate\+Vote}} (std\+::string candidate\+Name)
+\begin{DoxyCompactList}\small\item\em Get the number of votes for a candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMPOParty_a3b097a1f6b626e653084c4e020a7967f}{set\+Candidate\+Vote}} (std\+::string candidate\+Name, int votes)
+\begin{DoxyCompactList}\small\item\em Sets the number of votes for a candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMPOParty_ac40ee9e1f2a243faa2b8040974d6f1f9}{set\+Candidate\+Rankings}} (\mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}} new\+Candidate)
+\begin{DoxyCompactList}\small\item\em Sets the rankings for the candidate. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}} $>$ \mbox{\hyperlink{classMPOParty_aaa5e834aa2d5961e9931703bce911faa}{get\+Rankings}} ()
+\begin{DoxyCompactList}\small\item\em Get the rankings for the candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMPOParty_ade2045e3625b9bfb6d84ceda5397bc95}{add\+MPOCandidate}} (\mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}} candidate)
+\begin{DoxyCompactList}\small\item\em Adds a new MPO candiate object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is a class that defines the functionalities for the \mbox{\hyperlink{classMPOParty}{MPOParty}} object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMPOParty_ade2045e3625b9bfb6d84ceda5397bc95}\label{classMPOParty_ade2045e3625b9bfb6d84ceda5397bc95}} 
+\index{MPOParty@{MPOParty}!addMPOCandidate@{addMPOCandidate}}
+\index{addMPOCandidate@{addMPOCandidate}!MPOParty@{MPOParty}}
+\doxysubsubsection{\texorpdfstring{addMPOCandidate()}{addMPOCandidate()}}
+{\footnotesize\ttfamily void MPOParty\+::add\+MPOCandidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}}}]{candidate }\end{DoxyParamCaption})}
+
+
+
+Adds a new MPO candiate object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate} & \mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}} object to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMPOParty_aea9bc88dcb5b530aa5336d75ae660de5}\label{classMPOParty_aea9bc88dcb5b530aa5336d75ae660de5}} 
+\index{MPOParty@{MPOParty}!getCandidateVote@{getCandidateVote}}
+\index{getCandidateVote@{getCandidateVote}!MPOParty@{MPOParty}}
+\doxysubsubsection{\texorpdfstring{getCandidateVote()}{getCandidateVote()}}
+{\footnotesize\ttfamily int MPOParty\+::get\+Candidate\+Vote (\begin{DoxyParamCaption}\item[{std\+::string}]{candidate\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the number of votes for a candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate\+Name} & String representing the name of the candidate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an integer representing the number of votes a candidate has 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMPOParty_aaa5e834aa2d5961e9931703bce911faa}\label{classMPOParty_aaa5e834aa2d5961e9931703bce911faa}} 
+\index{MPOParty@{MPOParty}!getRankings@{getRankings}}
+\index{getRankings@{getRankings}!MPOParty@{MPOParty}}
+\doxysubsubsection{\texorpdfstring{getRankings()}{getRankings()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}} $>$ MPOParty\+::get\+Rankings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the rankings for the candidates. 
+
+\begin{DoxyReturn}{Returns}
+A vector of type \mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMPOParty_ac40ee9e1f2a243faa2b8040974d6f1f9}\label{classMPOParty_ac40ee9e1f2a243faa2b8040974d6f1f9}} 
+\index{MPOParty@{MPOParty}!setCandidateRankings@{setCandidateRankings}}
+\index{setCandidateRankings@{setCandidateRankings}!MPOParty@{MPOParty}}
+\doxysubsubsection{\texorpdfstring{setCandidateRankings()}{setCandidateRankings()}}
+{\footnotesize\ttfamily void MPOParty\+::set\+Candidate\+Rankings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}}}]{new\+Candidate }\end{DoxyParamCaption})}
+
+
+
+Sets the rankings for the candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Candidate} & \mbox{\hyperlink{classCandidateMPO}{Candidate\+MPO}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMPOParty_a3b097a1f6b626e653084c4e020a7967f}\label{classMPOParty_a3b097a1f6b626e653084c4e020a7967f}} 
+\index{MPOParty@{MPOParty}!setCandidateVote@{setCandidateVote}}
+\index{setCandidateVote@{setCandidateVote}!MPOParty@{MPOParty}}
+\doxysubsubsection{\texorpdfstring{setCandidateVote()}{setCandidateVote()}}
+{\footnotesize\ttfamily void MPOParty\+::set\+Candidate\+Vote (\begin{DoxyParamCaption}\item[{std\+::string}]{candidate\+Name,  }\item[{int}]{votes }\end{DoxyParamCaption})}
+
+
+
+Sets the number of votes for a candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate\+Name} & String representing the name of a candidate \\
+\hline
+{\em votes} & An integer representing the number of votes a candidate has \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/\mbox{\hyperlink{PartyMPO_8h}{Party\+MPO.\+h}}\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/Party\+MPO.\+cpp\end{DoxyCompactItemize}

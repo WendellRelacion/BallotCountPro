@@ -1,0 +1,4 @@
+<map id="OPL_Party" name="OPL_Party">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node2" href="$classParty.html" title="This is a class that defines the functionalites for both OPLParties and CPL_Party." alt="" coords="21,5,77,32"/>
+</map>

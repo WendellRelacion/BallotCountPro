@@ -1,0 +1,141 @@
+\hypertarget{classMVParty}{}\doxysection{MVParty Class Reference}
+\label{classMVParty}\index{MVParty@{MVParty}}
+
+
+This is a class that defines the functionalities for the \mbox{\hyperlink{classMVParty}{MVParty}} object.  
+
+
+
+
+{\ttfamily \#include $<$Party\+MV.\+h$>$}
+
+
+
+Inheritance diagram for MVParty\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classMVParty__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for MVParty\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classMVParty__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMVParty_aac7da585eb2d318c5dec885d81dbc73f}{get\+Candidate\+Vote}} (std\+::string candidate\+Name)
+\begin{DoxyCompactList}\small\item\em Get the number of votes for a candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMVParty_a2f5007a3a3e3c3fe3e5552cc8f91673e}{set\+Candidate\+Vote}} (std\+::string candidate\+Name, int votes)
+\begin{DoxyCompactList}\small\item\em Sets the number of votes for a candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMVParty_a9ee60da622d609f2bf323e01b2aa5819}{set\+Candidate\+Rankings}} (\mbox{\hyperlink{classCandidateMV}{Candidate\+MV}} new\+Candidate)
+\begin{DoxyCompactList}\small\item\em Sets the rankings for the candidate. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidateMV}{Candidate\+MV}} $>$ \mbox{\hyperlink{classMVParty_abb7b936d1ae6d4a9f70cc92545b686f3}{get\+Rankings}} ()
+\begin{DoxyCompactList}\small\item\em Get the rankings for the candidates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMVParty_afdfdcf3ecb6e1cb6a312cb0104602bb0}{add\+MVCandidate}} (\mbox{\hyperlink{classCandidateMV}{Candidate\+MV}} candidate)
+\begin{DoxyCompactList}\small\item\em Adds a new MV candiate object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is a class that defines the functionalities for the \mbox{\hyperlink{classMVParty}{MVParty}} object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMVParty_afdfdcf3ecb6e1cb6a312cb0104602bb0}\label{classMVParty_afdfdcf3ecb6e1cb6a312cb0104602bb0}} 
+\index{MVParty@{MVParty}!addMVCandidate@{addMVCandidate}}
+\index{addMVCandidate@{addMVCandidate}!MVParty@{MVParty}}
+\doxysubsubsection{\texorpdfstring{addMVCandidate()}{addMVCandidate()}}
+{\footnotesize\ttfamily void MVParty\+::add\+MVCandidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidateMV}{Candidate\+MV}}}]{candidate }\end{DoxyParamCaption})}
+
+
+
+Adds a new MV candiate object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate} & \mbox{\hyperlink{classCandidateMV}{Candidate\+MV}} object to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMVParty_aac7da585eb2d318c5dec885d81dbc73f}\label{classMVParty_aac7da585eb2d318c5dec885d81dbc73f}} 
+\index{MVParty@{MVParty}!getCandidateVote@{getCandidateVote}}
+\index{getCandidateVote@{getCandidateVote}!MVParty@{MVParty}}
+\doxysubsubsection{\texorpdfstring{getCandidateVote()}{getCandidateVote()}}
+{\footnotesize\ttfamily int MVParty\+::get\+Candidate\+Vote (\begin{DoxyParamCaption}\item[{std\+::string}]{candidate\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the number of votes for a candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate\+Name} & String representing the name of the candidate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an integer representing the number of votes a candidate has 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMVParty_abb7b936d1ae6d4a9f70cc92545b686f3}\label{classMVParty_abb7b936d1ae6d4a9f70cc92545b686f3}} 
+\index{MVParty@{MVParty}!getRankings@{getRankings}}
+\index{getRankings@{getRankings}!MVParty@{MVParty}}
+\doxysubsubsection{\texorpdfstring{getRankings()}{getRankings()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidateMV}{Candidate\+MV}} $>$ MVParty\+::get\+Rankings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the rankings for the candidates. 
+
+\begin{DoxyReturn}{Returns}
+A vector of type \mbox{\hyperlink{classCandidateMV}{Candidate\+MV}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMVParty_a9ee60da622d609f2bf323e01b2aa5819}\label{classMVParty_a9ee60da622d609f2bf323e01b2aa5819}} 
+\index{MVParty@{MVParty}!setCandidateRankings@{setCandidateRankings}}
+\index{setCandidateRankings@{setCandidateRankings}!MVParty@{MVParty}}
+\doxysubsubsection{\texorpdfstring{setCandidateRankings()}{setCandidateRankings()}}
+{\footnotesize\ttfamily void MVParty\+::set\+Candidate\+Rankings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidateMV}{Candidate\+MV}}}]{new\+Candidate }\end{DoxyParamCaption})}
+
+
+
+Sets the rankings for the candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Candidate} & \mbox{\hyperlink{classCandidateMV}{Candidate\+MV}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMVParty_a2f5007a3a3e3c3fe3e5552cc8f91673e}\label{classMVParty_a2f5007a3a3e3c3fe3e5552cc8f91673e}} 
+\index{MVParty@{MVParty}!setCandidateVote@{setCandidateVote}}
+\index{setCandidateVote@{setCandidateVote}!MVParty@{MVParty}}
+\doxysubsubsection{\texorpdfstring{setCandidateVote()}{setCandidateVote()}}
+{\footnotesize\ttfamily void MVParty\+::set\+Candidate\+Vote (\begin{DoxyParamCaption}\item[{std\+::string}]{candidate\+Name,  }\item[{int}]{votes }\end{DoxyParamCaption})}
+
+
+
+Sets the number of votes for a candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate\+Name} & String representing the name of a candidate \\
+\hline
+{\em votes} & An integer representing the number of votes a candidate has \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/\mbox{\hyperlink{PartyMV_8h}{Party\+MV.\+h}}\item 
+/home/bakri015/\+Desktop/csci5801/repo-\/\+Team11/\+Project2/src/Party\+MV.\+cpp\end{DoxyCompactItemize}

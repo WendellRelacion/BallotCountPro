@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classCandidate.html" title="This is a class that defines the functionalities for the candidate object." alt="" coords="5,56,93,83"/>
+<area shape="rect" id="node2" href="$classCandidateMPO.html" title="CandidateMPO." alt="" coords="141,5,260,32"/>
+<area shape="rect" id="node3" href="$classCandidateMV.html" title="CandidateMV." alt="" coords="146,56,255,83"/>
+<area shape="rect" id="node4" href="$classCandidateOPL.html" title="CandidateOPL." alt="" coords="144,107,257,133"/>
+</map>
